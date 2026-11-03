@@ -1,0 +1,24 @@
+/*
+ * Skill: sign-in screen "Workshop" (burnt-orange pegboard with gears, a pencil and music notes).
+ * Loaded by the subject-site-template UI (2.x) after its own css/hub.css,
+ * named in subject.json "theme". Only variables and the art area are set;
+ * the url() is relative to this file. No book content here.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+:root {
+  --gate-bg: #b8431b;
+  --gate-fg: #ffffff;
+  --gate-muted: #ffefe6;
+  --gate-button-bg: #1c1917;
+  --gate-button-fg: #ffffff;
+  --gate-heading-font: "Archivo Black", Impact, system-ui, sans-serif;
+  --gate-focus: #ffd23f;
+}
+
+#gate .gate-art {
+  min-height: 42vh;
+  background:
+    url("workshop.svg") center / contain no-repeat,
+    radial-gradient(circle at 15px 15px, rgba(0, 0, 0, 0.28) 2.5px, transparent 3.2px) 0 0 / 30px 30px;
+}
